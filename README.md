@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Ownership Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ownership Calculator is a React application that calculates and displays the total ownership percentages for individuals based on hierarchical ownership structures. This application allows users to add companies or people with specified ownership percentages and calculates the total ownership for each person, accounting for nested ownership relationships.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Owners**: Add companies or people with specified ownership percentages.
+- **Hierarchical Ownership Calculation**: Calculate ownership percentages recursively based on parent-child relationships.
+- **Aggregated Ownership Display**: Display the total ownership percentages for individuals, combining percentages if an individual is listed multiple times.
+- **User-friendly Interface**: Intuitive interface built with React and styled using Tailwind CSS.
+- **Real-time Updates**: Ownership percentages are updated in real-time as users add or modify owners.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```sh
+   git clone https://github.com/kevinfiddick/Ownership-Calculator.git
+   cd Ownership-Calculator
+   ```
 
-### `npm test`
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```sh
+   npm install
+   ```
 
-### `npm run build`
+3. Start the application:
+   ```sh
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Open the application in your browser (usually at `http://localhost:3000`).
+2. Use the interface to add owners by specifying their name, type (company or person), ownership percentage, and parent ID if applicable.
+3. The application will automatically calculate and display the total ownership percentages for individuals.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Code Structure
 
-### `npm run eject`
+- **`src`**: Contains the source code of the application.
+  - **`components`**: Reusable Ownership Table.
+  - **`forms`**: Reusable Owner Form.
+  - **`icons`**: SVG Icons from [Github](https://octicons.github.com/)
+  - **`inputs`**: Inputs used in the Owner Form.
+  - **`utils`**: Utility functions for ownership calculations.
+  - **`App.js`**: Main application component.
+  - **`index.js`**: Entry point of the application.
+  - **`styles`**: Tailwind CSS configuration.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under The Unlicense. See the [LICENSE](LICENSE) file for details.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For questions or suggestions, please open an issue in the repository or contact the repository owner.
