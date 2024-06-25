@@ -2,6 +2,8 @@
 
 Ownership Calculator is a React application that calculates and displays the total ownership percentages for individuals based on hierarchical ownership structures. This application allows users to add companies or people with specified ownership percentages and calculates the total ownership for each person, accounting for nested ownership relationships.
 
+![public/screenshot.png](public/screenshot.png)
+
 ## Features
 
 - **Add Owners**: Add companies or people with specified ownership percentages.
