@@ -5,7 +5,9 @@ export default function calculateTotalPercentages(owners) {
       return Number(owner.percentage);
     } else {
       const parent = getOwnerById(owner.parentId);
-      return (Number(owner.percentage) * calculatePercentage(parent)) / 100;
+      return parent
+        ? (Number(owner.percentage) * calculatePercentage(parent)) / 100
+        : Number(owner.percentage);
     }
   };
   const totalPercentages = {};
